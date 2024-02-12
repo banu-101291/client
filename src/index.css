@@ -1,51 +1,48 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap");
 
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
-/* font-family: 'Poppins', sans-serif; */
-/* font-family: 'Playfair Display', serif; */
-
-/* //navbar css */
 .navbar {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins, sans-serif";
   font-size: 17px;
   line-height: 26px;
   text-transform: uppercase;
-  box-shadow: 0 8px 6px -6px gray;
-  --webkit-box-shadow: 0 8px 6px -6px gray;
-  border-bottom: solid gray !important;
+  box-shadow: 0 8px 6px -6px rgb(156, 249, 17);
+  --webkit-box-shadow:0 8px 6px -6px rgb(156, 249, 17);
+  border-bottom:solid greenyellow !important;
+  background-color: lightgreen;
 }
 
-.nav-link {
+.nav-link{
   font-weight: 300 !important;
 }
 
-.active {
-  border-bottom: 2px solid black;
+.active{
+  border-bottom: 2px solid rgb(4, 4, 4);
 }
 
 .navbar-brand {
   font-weight: 700;
-  font-family: "roboto", sans-serif;
+  font-family:Arial, Helvetica, sans-serif;
   letter-spacing: 3px;
 }
-/* =============================
-==========footer============= */
+
 
 .footer {
   color: white;
-  padding: 25px;
-  background: #000000; /* fallback for old browsers */
+  padding: 5px;
+  background: #ec4a4a; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
-    #434343,
-    #000000
+    #e67171,
+    #552c2c
   ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #434343, #000000);
+  background: linear-gradient(to right, #434343, #04fc42);
 }
 
 .footer a {
@@ -58,8 +55,7 @@
   color: #ffefba;
   border-bottom: 1px solid #ffefba;
 }
-/* =================================
-======== page not found css ======= */
+
 .pnf {
   display: flex;
   min-height: 65vh;
@@ -88,8 +84,7 @@
   background-color: black;
   color: white;
 }
-/* ========================================= */
-/* =========contact us ========= */
+
 .contactus {
   margin: 0;
   padding: 0;
@@ -97,4 +92,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.product-link {
+  text-decoration: none !important;
+  color: black !important;
 }
