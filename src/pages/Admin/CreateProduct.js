@@ -47,7 +47,7 @@ const CreateProduct = () => {
       productData.append("photo", photo);
       productData.append("category", category);
       const { data } = axios.post(
-        "https://ecomss.onrender.com/api/v1/product/create-product",
+        "https://ecommerce-u4ub.onrender.com/api/v1/product/create-product",
         productData
       );
       if (data?.success) {

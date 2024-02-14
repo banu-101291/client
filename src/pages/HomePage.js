@@ -22,7 +22,7 @@ const HomePage = () => {
   //get all cat
   const getAllCategory = async () => {
     try {
-      const { data } = await axios.get("https://ecomss.onrender.com/api/v1/category/get-category");
+      const { data } = await axios.get("https://ecommerce-u4ub.onrender.com/api/v1/category/get-category");
       if (data?.success) {
         setCategories(data?.category);
       }
@@ -40,7 +40,7 @@ const HomePage = () => {
   const getAllProducts = async () => {
     try {
       setLoading(true);
-      const { data } = await axios.get(`https://ecomss.onrender.com/api/v1/product/get-product`);
+      const { data } = await axios.get(`https://ecommerce-u4ub.onrender.com/api/v1/product/get-product`);
       
       setLoading(false);
       setProducts(data.products);

@@ -154,7 +154,7 @@ const UpdateProduct = () => {
                 ) : (
                   <div className="text-center">
                     <img
-                      src={`https://ecomss.onrender.com/api/v1/product/product-photo/${id}`}
+                      src={`https://ecommerce-u4ub.onrender.com/api/v1/product/product-photo/${id}`}
                       alt="product_photo"
                       height={"200px"}
                       className="img img-responsive"

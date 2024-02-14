@@ -81,7 +81,7 @@ const CreateCategory = () => {
    const handleDelete = async (pId) => {
     try {
       const { data } = await axios.delete(
-        `https://ecomss.onrender.com/api/v1/category/delete-category/ ${pId}`
+        `https://ecommerce-u4ub.onrender.com/api/v1/category/delete-category/ ${pId}`
       );
       if (data.success) {
         toast.success(`category is deleted`);
