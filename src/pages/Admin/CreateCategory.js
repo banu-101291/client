@@ -20,7 +20,7 @@ const CreateCategory = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.post("https://ecomss.onrender.com/api/v1/category/create-category", {
+      const { data } = await axios.post("https://ecommerce-u4ub.onrender.com/api/v1/category/create-category", {
         name,
       });
       if (data?.success) {
@@ -39,7 +39,7 @@ const CreateCategory = () => {
   
   const getAllCategory = async () => {
     try{
-      const{data} = await axios.get('https://ecomss.onrender.com/api/v1/category/get-category')
+      const{data} = await axios.get('https://ecommerce-u4ub.onrender.com/api/v1/category/get-category')
       if(data.success) {
         setCategories(data.category);
       }
@@ -60,7 +60,7 @@ const CreateCategory = () => {
     e.preventDefault();
     try {
       const { data } = await axios.put(
-        `https://ecomss.onrender.com/api/v1/category/update-category/${selected._id}`,
+        `https://ecommerce-u4ub.onrender.com/api/v1/category/update-category/${selected._id}`,
         { name: updatedName }
       );
       if (data.success) {

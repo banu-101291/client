@@ -17,7 +17,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("hhttps://ecommerce-u4ub.onrender.com/api/v1/auth/login", {
+      const res = await axios.post("https://ecommerce-u4ub.onrender.com/api/v1/auth/login", {
         email,
         password,
       });
